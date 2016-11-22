@@ -1,2 +1,2 @@
 # project-rails
-project exercise from 'Web development 101' of The Odin Projectt
+project exercise from 'Web development 101' of The Odin Project
