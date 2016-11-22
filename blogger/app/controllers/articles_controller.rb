@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
+  before_filter :require_login, except: [:index, :show]
 
   def index
     @articles = Article.all
@@ -27,7 +28,7 @@ class ArticlesController < ApplicationController
   def edit
     @article = Article.find(params[:id])
   end
-  
+
   def update
     @article = Article.find(params[:id])
     @article.update(article_params)
